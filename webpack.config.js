@@ -4,12 +4,12 @@ var glob = require('glob');
 /*
  extract-text-webpack-plugin插件，
  有了它就可以将你的样式提取到单独的css文件里，
- 妈妈再也不用担心样式会被打包到js文件里了。
+ 不用担心样式会被打包到js文件里了。
  */
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 /*
  html-webpack-plugin插件，重中之重，webpack中生成HTML的插件，
- 具体可以去这里查看https://www.npmjs.com/package/html-webpack-plugin
+ https://www.npmjs.com/package/html-webpack-plugin
  */
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -88,11 +88,15 @@ var config = {
             compress: {
                 warnings: false
             },
-            except: ['$super', '$', 'exports', 'require'] //排除关键字
+            // except: ['$super', '$', 'exports', 'require'] //排除关键字
         }),
 
         new webpack.HotModuleReplacementPlugin() //热加载
     ],
+
+    //开启source-map功能，方便调试，只支持es6
+    devtool: 'eval-source-map',
+
     //使用webpack-dev-server，提高开发效率
     devServer: {
         contentBase: './',

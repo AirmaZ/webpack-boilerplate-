@@ -6,7 +6,7 @@ let fragment = require("../../../view/html/indexFragment.html");
 
 const title = "新的前端框架,haha";
 
-$(".index-title").text(title);
+$(".index-title").text(title);debugger;
 $(".index-indexFragment").html(fragment);
 
 
