@@ -4,7 +4,7 @@
 
 let fragment = require("../../../view/html/indexFragment.html");
 
-const title = "新的前端框架";
+const title = "新的前端框架,haha";
 
 $(".index-title").text(title);
 $(".index-indexFragment").html(fragment);

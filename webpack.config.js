@@ -158,4 +158,3 @@ function getEntry(globPath, pathDir) {
     }
     return entries;
 }
-
