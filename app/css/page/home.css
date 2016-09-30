@@ -1,0 +1,7 @@
+.img-pic{
+    position: relative;
+    border-radius: 10px 0 10px 0;
+    display: block;
+    width: 100px;
+    margin: 30px auto;
+}

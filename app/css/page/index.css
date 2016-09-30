@@ -1,0 +1,22 @@
+.index-btn{
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    background-color: #b44141;
+    color: white;
+    cursor: pointer;
+    margin: 50px auto;
+}
+.index-btn:hover{
+    color: #b44141;
+    background-color: white;
+}
+
+.index-indexFragment{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
