@@ -74,7 +74,8 @@ var config = {
     },
     plugins: [
         new webpack.ProvidePlugin({ //加载jq
-            $: 'jquery'
+            $: 'jquery',
+            Mock: 'mockjs'
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendors', // 将公共模块提取，生成名为`vendors`的chunk

@@ -7,6 +7,11 @@ require("../../css/page/index.css");
 require("../../css/page/base.css");
 
 
-// JS------------------------------------
+// mock---------------------------------
+require("../../mockjs/mock");
+
+
+
+// JS-----------------------------------
 require("../script/index/indexScript");
 
