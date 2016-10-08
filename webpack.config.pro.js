@@ -1,3 +1,6 @@
+/**
+ * Created by Airma on 2016/10/8.
+ */
 var path = require('path');
 var webpack = require('webpack');
 var glob = require('glob');
@@ -75,7 +78,7 @@ var config = {
     plugins: [
         new webpack.ProvidePlugin({ //加载jq
             $: 'jquery',
-            Mock: 'mockjs'
+            // Mock: 'mockjs'
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendors', // 将公共模块提取，生成名为`vendors`的chunk
@@ -84,18 +87,18 @@ var config = {
         }),
         new ExtractTextPlugin('css/[name].css'), //单独使用link标签加载css并设置路径，相对于output配置中的publickPath
 
-        // new webpack.optimize.UglifyJsPlugin({ //压缩代码
-        //     compress: {
-        //         warnings: false
-        //     },
-        //     except: ['$super', '$', 'exports', 'require'] //排除关键字
-        // }),
+        new webpack.optimize.UglifyJsPlugin({ //压缩代码
+            compress: {
+                warnings: false
+            },
+            except: ['$super', '$', 'exports', 'require'] //排除关键字
+        }),
 
         new webpack.HotModuleReplacementPlugin() //热加载
     ],
 
     //开启source-map功能，方便调试，只支持es6
-    devtool: 'eval-source-map',
+    // devtool: 'eval-source-map',
 
     //使用webpack-dev-server，提高开发效率
     devServer: {

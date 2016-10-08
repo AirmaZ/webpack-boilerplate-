@@ -20,6 +20,7 @@
 6. 支持server，支持server自动检测文件变动
 7. html片段加载
 8. 支持source map调试功能，可方便的调试es6等需要编译的代码
+9. dev/pro两套配置
 
 ## 配置详解 ##
 
