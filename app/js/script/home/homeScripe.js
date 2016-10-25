@@ -2,7 +2,9 @@
  * Created by Airma on 2016/9/30.
  */
 
+import utilTools from "../../common/utilTools"
 
-const title = "这里是图片";
-
-$(".index-title").text(title);
+$('a[targetname]').on('click', function(){
+    var pageName = $(this).attr('targetname');
+    utilTools.skipPage(configUrl[pageName], {parmas:1}, pageName);
+});

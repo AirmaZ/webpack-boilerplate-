@@ -8,3 +8,4 @@ require("../../css/page/home.css");
 
 // JS-------------------------------
 require("../script/home/homeScripe");
+

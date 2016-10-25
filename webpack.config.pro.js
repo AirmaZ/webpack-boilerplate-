@@ -26,7 +26,10 @@ var config = {
     //     index: './app/js/page/index.js',
     //     home: './app/js/page/home.js'
     // },
-    entry: entries,
+    entry: function () {
+        entries.config = ['./app/config/config.pro.js'];
+        return entries;
+    }(),
     output: {
         path: path.join(__dirname, 'dist'), //输出目录的配置，模板、样式、脚本、图片等资源的路径配置都相对于它
         publicPath: '/dist/',               //模板、样式、脚本、图片等资源对应的server上的路径
@@ -69,7 +72,7 @@ var config = {
                 loader: "babel-loader",
                 query: {
                     //编译顺序为从右到左
-                    presets: ['react', 'es2015']
+                    presets: ['react', 'es2015','stage-1']
                 }
             }
 
@@ -131,7 +134,7 @@ pages.forEach(function (pathname) {
     if (pathname in config.entry) {
         conf.favicon = 'app/img/favicon.ico';  //站点图标位置
         conf.inject = 'body';                  //js插入位置
-        conf.chunks = ['vendors', pathname];   //引用包
+        conf.chunks = ['config','vendors', pathname];   //引用包
         conf.hash = true;                      //hash版本号
     }
     config.plugins.push(new HtmlWebpackPlugin(conf));

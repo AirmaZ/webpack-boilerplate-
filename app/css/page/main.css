@@ -1,0 +1,43 @@
+/* Wfp v2.0 frame author wcy 2014-08-11*/
+
+/*整体框架布局*/
+header{
+    position: relative;
+    height:41px;
+    min-width: 1024px;
+    border-bottom:1px solid #246bae;
+    background-color: #3698D9;
+}
+.content,.nav{
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -o-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 42px;
+    bottom: 0px;
+    width: 100%;
+}
+nav{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid #3199dd;
+    background: #f0f4f8;
+}
+iframe{
+    position: absolute;
+    top: 0px;
+    left: 15%;
+    width: 85%;
+    height: 100%;
+}
+
+
+
+
