@@ -8,3 +8,8 @@ $('a[targetname]').on('click', function(){
     var pageName = $(this).attr('targetname');
     utilTools.skipPage(configUrl[pageName], null, pageName);
 });
+
+
+$(document).ready( function () {
+    $('#table_id_example').DataTable();
+} );

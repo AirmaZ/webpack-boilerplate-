@@ -72,15 +72,16 @@ var config = {
                     presets: ['react', 'es2015','stage-1']
                 }
             }
-
         ]
     },
     plugins: [
         new webpack.ProvidePlugin({ //加载jq
             $: "jquery",
-            Mock: 'mockjs'
+            jQuery : "jquery",
+            Mock: 'mockjs',
+            moment: 'moment'
         }),
-        new webpack.optimize.CommonsChunkPlugin({
+        new webpack.optimize.CommonsChunkPlugin({   //!!!!!!!!注意：这会将所有入口的公共模块提取，如有有一个独立的不相干入口，会造成chunk生成困难，请单独提取！！！！
             name: 'vendors', // 将公共模块提取，生成名为`vendors`的chunk
             chunks: chunks, //提取哪些模块共有的部分
             minChunks: chunks.length // 提取所有模块共有的部分
@@ -103,7 +104,7 @@ var config = {
     //使用webpack-dev-server，提高开发效率
     devServer: {
         contentBase: './',
-        host: 'localhost',
+        host: '0.0.0.0',
         port: 9090, //默认8080
         inline: true, //可以监控js变化
         hot: true //热启动
@@ -138,10 +139,6 @@ pages.forEach(function (pathname) {
 });
 
 
-console.log(config);
-
-module.exports = config;
-
 /**
  * 返回globPath目录下所匹配的文件名及路径
  * @param globPath
@@ -165,3 +162,5 @@ function getEntry(globPath, pathDir) {
     }
     return entries;
 }
+
+module.exports = config;

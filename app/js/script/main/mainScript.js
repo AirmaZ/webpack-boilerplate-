@@ -29,8 +29,3 @@ window.addEventListener( "message", function(e) {
         showPage(params[1]);
     }
 });
-
-//测试mock.js
-$.get("io/getdata",function (data) {
-    console.log(data);
-});

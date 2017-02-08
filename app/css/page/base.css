@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #dddddd;
-    font-family: 幼圆;
+html,body{
+    background-color: #ffffff;
+    font-family: Microsoft YaHei!important;
+    color: #333;
+	font-size: 15px;
 }
 a{
     text-decoration:none;
@@ -17,22 +19,48 @@ a{
 .show {
     display: block;
 }
+.ellipsis{
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.hidden{
+    display: none;
+}
+ul,li{
+    list-style: none;
+}
+button{
+    font-family: Microsoft YaHei!important;
+}
+input,select{
+    border-radius: 4px!important;
+}
 
-
-
-/*.content{*/
-    /*position: relative;*/
-    /*width: 500px;*/
-    /*height: 200px;*/
-    /*margin: 0 auto;*/
-    /*background-color: #265858;*/
-    /*border-radius: 10px;*/
-/*}*/
-/*.index-title{*/
-    /*width: 100%;*/
-    /*text-align: center;*/
-    /*font-size: 30px;*/
-    /*margin-top: 50px;*/
-    /*line-height: 50px;*/
-    /*color: #f5f5ff;*/
-/*}*/
+button,input,select{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+button.query{
+    padding: 0.4rem 1rem 0.4rem 1rem!important;
+    font-size: 0.8rem!important;
+    font-family: Microsoft YaHei!important;
+    border-radius: 4px;
+}
+.cur-year{
+    box-shadow: none!important;
+}

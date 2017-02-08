@@ -1,0 +1,328 @@
+table.dataTable {
+  clear: both;
+  /*margin: 3px 0  0 0 !important;*/
+  max-width: none !important;
+  width: 100%;
+  table-layout: fixed!important;
+}
+table.dataTable td,
+table.dataTable th {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+table.dataTable td.dataTables_empty,
+table.dataTable th.dataTables_empty {
+  text-align: center;
+}
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+  white-space: nowrap;
+}
+
+div.dataTables_wrapper {
+  position: relative;
+}
+div.dataTables_wrapper div.dataTables_length label {
+  float: left;
+  text-align: left;
+  margin-bottom: 0;
+}
+div.dataTables_wrapper div.dataTables_length select {
+  width: 75px;
+  margin-bottom: 0;
+  height: 1.8rem;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+  float: right;
+  margin-bottom: 0;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+  display: inline-block !important;
+  width: 250px !important;
+  margin-bottom: 0;
+  margin-left: 0.5em;
+}
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: 2px;
+  float: left;
+  font-size: 0.88rem;
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+  float: right;
+  margin: 0;
+}
+div.dataTables_wrapper div.dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -26px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+  padding-right: 1.5rem;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+  outline: none;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  cursor: pointer;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+table.dataTable thead .sorting {
+  background-image: url("../images/sort_both.png");
+}
+table.dataTable thead .sorting_asc {
+  background-image: url("../images/sort_asc.png");
+}
+table.dataTable thead .sorting_desc {
+  background-image: url("../images/sort_desc.png");
+}
+table.dataTable thead .sorting_asc_disabled {
+  background-image: url("../images/sort_asc_disabled.png");
+}
+table.dataTable thead .sorting_desc_disabled {
+  background-image: url("../images/sort_desc_disabled.png");
+}
+
+div.dataTables_scrollHead table {
+  margin-bottom: 0 !important;
+}
+
+div.dataTables_scrollBody table {
+  border-top: none;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+div.dataTables_scrollBody table tbody tr:first-child th,
+div.dataTables_scrollBody table tbody tr:first-child td {
+  border-top: none;
+}
+
+div.dataTables_scrollFoot table {
+  margin-top: 0 !important;
+  border-top: none;
+}
+
+/*自定义样式*/
+div.dataTables_wrapper div.dataTables_filter label{
+	position: relative;
+	left: 0.8rem;
+	float: left!important;
+}
+div.dataTables_wrapper div.dataTables_paginate{
+	text-align: center!important;
+}
+div.dataTables_wrapper .top{
+	position: relative;
+  margin-top: 5px;
+  margin-bottom: 3px;
+	height: 30px;
+}
+div.dataTables_wrapper{
+	border: solid 1px #ddd;
+}
+table.dataTable{
+	border-top: solid 1px #ddd!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: none!important;
+}
+div.dataTables_wrapper .top input{
+	margin-left: 10px;
+	width: 15em;
+	height: 1.87rem;
+  border-radius: 4px;
+}
+/*表格右上方button*/
+div.dataTables_wrapper .top .btn-wrap{
+	position: relative;
+    /*right: 10px;*/
+    margin-right: 10px;
+    height: 30px;
+}
+div.dataTables_wrapper .top button{
+    margin-right: 0px;
+    padding: 0.4rem 1rem 0.4rem 1rem!important;
+    font-size: 0.8rem!important;
+    font-family: Microsoft YaHei!important;
+    border-radius: 4px;
+}
+div.dataTables_wrapper .top ul{
+	position: absolute;
+	top: 27px;
+	margin: 0;
+  border-radius: 0px 0px 4px 4px;
+  z-index: 99;
+}
+div.dataTables_wrapper .top ul, div.dataTables_wrapper .top li{
+	width: 100%;
+	background: #008CBA;
+	text-align: center;
+	color: #fff;
+	font-size: 0.5rem!important;
+}
+div.dataTables_wrapper .top li{
+	padding: 0.4em 0;
+	cursor: pointer;
+}
+div.dataTables_wrapper .top li:last-child{
+  border-radius: 0px 0px 4px 4px;
+  line-height: normal;
+}
+div.dataTables_wrapper .top li:hover{
+	background: #007095;
+}
+.dataTables_length select{
+	/*height: 1.8rem;*/
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem!important;
+}
+div.dataTables_wrapper .bottom label, div.dataTables_wrapper .bottom ul{
+	margin-top: 5px;
+}
+/*行选中*/
+tr.active{
+	background: #0088CC!important;
+	color: #fff;
+}
+.active td{
+  color: #fff;
+}
+/*复选框*/
+div.dataTables_wrapper input[name=cb-check-all]{
+	margin: 0!important;
+}
+div.dataTables_wrapper .td-check{
+    margin-left: 10px!important;
+    margin-bottom: 0px!important;
+    margin-top: 0px!important;
+}
+/*操作列图标*/
+.opt-icon{
+	color: #008CBA;
+	font-size: 1.5em!important;
+	cursor: pointer;
+}
+.active .opt-icon {
+  color: #fff;
+}
+.opt-icon:not(:last-child){
+	margin-right: 0.6rem;
+}
+.opt-icon:hover{
+	color: #007095;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0rem!important;
+	font-family: Microsoft YaHei!important;
+  color: #333!important;
+}
+table tr th, table tr td{
+  color: #333;
+  font-size: 0.8rem!important;
+}
+tbody tr td{
+  line-height: 0.75rem!important;
+}
+.dataTables_scrollHead th,td{
+  padding-top: 0.4rem!important;
+  padding-bottom: 0.4rem!important;
+}
+
+ul.pagination li a,ul.pagination li button{
+  color: #333!important;
+}
+ul.pagination li.current a, ul.pagination li.current button{
+  color: #fff!important;
+}
+/*排序表格表头字段不对齐修改*/
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting{
+  padding-right: none!important;
+}
+
+.dataTables_wrapper .bottom select{
+  /*height: 2rem!important;*/
+}
+.pagination{
+  margin-bottom:0!important;
+}
+ul.pagination li{
+  margin-left:0!important;
+}
+
+input[type=checkbox]{
+  height: 1em!important;
+}
+input[type=search]{
+  padding: 0rem 0.5rem;
+}
+
+.opt-disable{
+  color: gray;
+  cursor: inherit;
+}
+.opt-disable:hover{
+  color: gray;
+}
+
+.dataTables_paginate a{
+  margin-top: 5px;
+  float: left;
+  cursor: default;
+  color: #333;
+  border-radius: 3px;
+  transition: background-color .3s ease-out;
+  background: none;
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: inherit;
+  padding: .1rem .5rem;
+}
+.dataTables_paginate a:not(.disabled){
+  cursor: pointer;
+}
+.ui-dialog-body .dataTables_paginate a{
+  padding: .3rem .5rem;
+}
+.dataTables_paginate a:not(.disabled):not(.current):hover{
+  background: lightgray;
+}
+
+.dataTables_paginate a.current{
+  background: #008cba;
+  color: #fff;
+  cursor: default;
+  font-weight: 600;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=color], textarea{
+  height: 1.885rem;
+}
+select{
+  padding: 0.2rem 0.5rem;
+  height: 1.885rem;
+}
+select option{
+  padding: 0.2rem 0.5rem;
+}

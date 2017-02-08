@@ -2,6 +2,8 @@
  * Created by user on 2016/10/19.
  */
 
+require("../common/common");
+
 require("font-awesome-webpack");
 
 require("../script/main/jqueryVendor");

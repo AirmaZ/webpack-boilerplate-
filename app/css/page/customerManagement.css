@@ -1,0 +1,73 @@
+/*html,body{
+    height: auto!important;
+}*/
+header{
+    padding: 0.6rem 0.6rem;
+}
+.main{
+    padding: 0 0.6rem;
+}
+.customer-label{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.customer-box{
+    position: relative;
+    margin: auto 0;
+    left: 5px;
+    width: 321px;
+}
+#status{
+    height: 36px;
+    font-size: 15px;
+}
+.distribution-box{
+    position: relative;
+    width: 100%;
+}
+
+.distribution-left{
+    float: left;
+    width: 48.5%;
+}
+.distribution-right{
+    float: right;
+    width: 48.5%;
+}
+.eventOff{
+    color: gray;
+    cursor: default;
+}
+.eventOff:hover{
+    color: gray;
+}
+.tab{
+    margin: 0px 0px 10px 0px;
+    height: 30px;
+}
+.tab li{
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.tab li:hover{
+    background-color: lightblue;
+    color: #fff;
+}
+.tab li.active{
+    background-color: lightblue;
+    color: #fff;
+}
+/*定宽：解决火狐浏览器下表格横向宽度展示不下问题*/
+.tab-content-wrap{
+    position: relative;
+    width: 777px; 
+    height: 404px;
+    overflow: hidden;
+}
+/*定宽：解决火狐浏览器下表格横向宽度展示不下问题*/
+.tab-content{
+    position: absolute;
+    height: 100%;
+    width: 777px;
+}

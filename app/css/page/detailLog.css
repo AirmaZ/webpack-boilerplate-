@@ -1,0 +1,12 @@
+.start-t,.end-t{
+    width: 150px!important;
+}
+.fa-check-circle{
+    color: #00A776;
+}
+.fa-circle{
+    color: slategray;
+}
+.fa-times-circle{
+    color: #E73C3C;
+}

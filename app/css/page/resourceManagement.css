@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors liumin
+ * @date    2016-11-02 11:02:34
+ * @version $Id$
+ */
+
+header{
+	padding: 0.6rem 0.6rem;
+}
+.content{
+	height: auto;
+	padding: 0rem 0.6rem;
+}
+input, label{
+	display: inline-block!important;
+}
+/*form label{
+	width: 100px!important;
+	text-align: right;
+}*/
+/*form input, form select{
+	width: 250px!important;
+}
+#r_form_add #r_remark{
+	width: 400px!important;
+}*/
+/*#r_remark{
+	width: 438px!important;
+}*/
+#r_ip_header{
+	width: 180px;
+}
+#r_ip_start, #r_ip_end{
+	width: 80px;
+}
